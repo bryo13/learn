@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	lf := new(locate.LocateFiles)
+	lf := new(locate.Files)
 	lgs := new(logger.Logs)
 
 	homepath, _ := lf.FindHome()
