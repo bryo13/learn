@@ -12,6 +12,6 @@ func main() {
 	lgs := new(logger.Logs)
 
 	homepath, _ := lf.FindHome()
-	lgs.SaveLogs(os.Stdout, homepath)
-	lf.MakeDir(homepath)
+	lf.MakeDir(homepath, "glearn")
+	lgs.SaveLogs(homepath, os.Stdout, homepath)
 }
